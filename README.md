@@ -1,2 +1,0 @@
-# Pagos
-funcion pago maestros
