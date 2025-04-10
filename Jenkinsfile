@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clonar repo') {
             steps {
-                git 'https://github.com/J-Sebastian22/Pagos.git'
+                git branch: 'main', url: 'https://github.com/J-Sebastian22/Pagos.git'
             }
         }
 
         stage('Ejecutar pruebas') {
             steps {
-                sh 'python3 -m unittest discover -s . -p "test_*.py"'
+                sh 'python3 -m unittest test_pago.py'
             }
         }
     }
