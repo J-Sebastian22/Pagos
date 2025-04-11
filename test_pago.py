@@ -5,7 +5,7 @@ class TestPago(unittest.TestCase):
         
     def test1(self):
         contrato = "tiempo completo"
-        horas_diurnas = 0
+        horas_diurnas = 40
         horas_nocturnas = 0
         horas_dominicales = 0
         horas_festivas = 0
